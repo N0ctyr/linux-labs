@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Sat Oct 25 18:22:03 2025 as: /usr/lib/nmap/nmap --privileged -Pn -p 22,80,443 -oN /home/hunter/labs/lab01/nmap_check_ports.txt 192.168.100.98
+Nmap scan report for 192.168.100.98
+Host is up (0.00026s latency).
+
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+80/tcp  open   http
+443/tcp closed https
+
+# Nmap done at Sat Oct 25 18:22:03 2025 -- 1 IP address (1 host up) scanned in 0.16 seconds
