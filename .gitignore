@@ -1,0 +1,21 @@
+# system files
+*.swp
+.DS_Store
+
+# big outputs
+*.pcap
+*.tar.gz
+*.iso
+
+# local configs / secrets
+*.key
+*.pem
+*.env
+
+# editors
+.vscode/
+.idea/
+pycache/
+
+# logs
+*.log
