@@ -1,0 +1,7 @@
+# whatweb scan summary for http://192.168.100.98
+Status: 200 OK
+Title: Apache2 Debian Default Page: It works
+Detected: Apache/2.4.65 (Debian)
+Notes:
+- Default Apache page detected
+- Server header present: Apache/2.4.65 (Debian)
