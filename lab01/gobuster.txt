@@ -1,0 +1,6 @@
+# Gobuster directory scan results (example)
+# Command: gobuster dir -u http://192.168.100.98 -w /usr/share/wordlists/dirb/common.txt
+/ (Status: 200) - index.html
+/server-status (Status: 200) - server-status
+/wordpress (Status: 301) - redirect to /wordpress/
+/xmlrpc.php (Status: 405) - found
