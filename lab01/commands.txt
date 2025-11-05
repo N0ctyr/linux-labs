@@ -1,0 +1,18 @@
+# Commands used in Lab01 (short description)
+# whatweb - سرویس‌ها و header های وب را شناسایی می‌کند
+whatweb http://192.168.100.98
+
+# nmap - اسکن پورت‌ها و سرویس‌ها
+nmap -Pn -p 22,80,443 192.168.100.98 -oN nmap_check_ports.txt
+
+# nikto - بررسی آسیب‌پذیری‌های وب (HTTP)
+nikto -host http://192.168.100.98 -output nikto_http_192-168-100-98.txt -nointeractive -timeout 20
+
+# gobuster - جستجوی دایرکتوری‌ها (مثال)
+gobuster dir -u http://192.168.100.98 -w /usr/share/wordlists/dirb/common.txt -o gobuster.txt
+
+# tcpdump (مثال capture)
+sudo tcpdump -n -i eth0 host 192.168.100.98 -c 100 -w capture.pcap
+
+# لاگ‌ها و آنالیز با awk/sed/grep
+grep -i "Failed password" auth.log | sed -E 's/.* from ([0-9.]+).*/\1/' | sort | uniq -c | sort -rn
