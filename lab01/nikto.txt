@@ -1,0 +1,8 @@
+# Nikto scan summary for http://192.168.100.98
+- Server: Apache/2.4.65 (Debian)
+- Issues found:
+  * Missing X-Frame-Options header
+  * Missing X-Content-Type-Options header
+  * /server-status accessible (info leak)
+  * xmlrpc.php found
+- Scan time: 20s
