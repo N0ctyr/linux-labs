@@ -1,0 +1,45 @@
+# Investigation Report - Lab01
+
+English:
+Date: $(date)
+Objective:
+Initial web enumeration and basic vulnerability checks.
+
+Top findings:
+- Host 192.168.100.98: open ports: 22 (ssh), 80 (http). 443 closed.
+- Web server: Apache/2.4.65 (Debian) with default page.
+- Nikto highlights: missing security headers, /server-status exposed, xmlrpc.php present.
+- Gobuster: discovered /wordpress, /server-status, /xmlrpc.php.
+
+Conclusion:
+No live brute-force evidence in logs. Server appears to be in default/test configuration and requires hardening.
+
+Recommendations (quick):
+1. Restrict access to /server-status or disable it.
+2. Add security headers: X-Frame-Options, X-Content-Type-Options, Content-Security-Policy.
+3. Review WordPress files/plugins; disable xmlrpc if not needed.
+4. Enable fail2ban for SSH to block repeated failed logins.
+5. Backup web content regularly.
+
+Files: commands.txt, whatweb.txt, gobuster.txt, nikto.txt, summary.md
+
+Persian:
+تاریخ: $(date)
+هدف:
+جمع‌آوری اطلاعات اولیه و بررسی آسیب‌پذیری‌های پایه برای وب‌سرور.
+
+مهم‌ترین یافته‌ها:
+- هاست 192.168.100.98: پورت‌های باز: 22 و 80، پورت 443 بسته است.
+- وب‌سرور: Apache/2.4.65 با صفحه پیش‌فرض.
+- نکات نیکتو: نبود هدرهای امنیتی، در دسترس بودن /server-status، وجود xmlrpc.php.
+- gobuster: مسیرهای احتمالی /wordpress, /server-status, /xmlrpc.php.
+
+نتیجه‌گیری:
+شواهدی از brute-force در لاگ‌ها دیده نشد. سرور نیاز به سخت‌سازی دارد.
+
+توصیه‌های فوری:
+1. دسترسی به /server-status را محدود یا حذف کنید.
+2. هدرهای امنیتی را اضافه کنید.
+3. پلاگین‌ها و فایل‌های وردپرس را بررسی کنید؛ xmlrpc را غیرفعال کنید در صورت عدم نیاز.
+4. fail2ban را برای SSH فعال کنید.
+5. بکاپ گیری منظم از وب سایت.

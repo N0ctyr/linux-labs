@@ -1,0 +1,17 @@
+# whatweb scan summary for http://192.168.100.98
+
+English:
+Status: 200 OK
+Title: Apache2 Debian Default Page: It works
+Detected: Apache/2.4.65 (Debian)
+Notes:
+- Default Apache page detected
+- Server header: Apache/2.4.65 (Debian)
+
+Persian:
+وضعیت: 200 OK
+عنوان: صفحهٔ پیش‌فرض آپاچی (It works)
+شناسایی: Apache/2.4.65 (Debian)
+نکات:
+- صفحهٔ پیش‌فرض آپاچی دیده شد
+- هدر Server شامل Apache/2.4.65 است

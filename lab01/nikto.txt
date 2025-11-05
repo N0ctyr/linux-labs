@@ -1,0 +1,19 @@
+# Nikto scan summary for http://192.168.100.98
+
+English:
+Server: Apache/2.4.65 (Debian)
+Issues found:
+- Missing X-Frame-Options header (clickjacking risk)
+- Missing X-Content-Type-Options header
+- /server-status accessible (information disclosure)
+- xmlrpc.php found
+Scan duration: ~20s
+
+Persian:
+سرور: Apache/2.4.65 (Debian)
+موارد یافت‌شده:
+- عدم وجود X-Frame-Options (خطر clickjacking)
+- عدم وجود X-Content-Type-Options
+- /server-status در دسترس است (افشای اطلاعات)
+- فایل xmlrpc.php یافت شد
+زمان اسکن: حدود ۲۰ ثانیه
