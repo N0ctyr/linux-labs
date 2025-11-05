@@ -4,3 +4,10 @@
 /server-status (Status: 200) - server-status
 /wordpress (Status: 301) - redirect to /wordpress/
 /xmlrpc.php (Status: 405) - found
+
+دستور: gobuster dir -u http://192.168.100.98 -w /usr/share/wordlists/dirb/common.txt
+یافته‌ها:
+/ (وضعیت 200) - index.html
+/server-status (وضعیت 200) - server-status (اطلاعات سرویس)
+ /wordpress (ریدایرکت 301)
+/xmlrpc.php (وضعیت 405) - یافت شد
